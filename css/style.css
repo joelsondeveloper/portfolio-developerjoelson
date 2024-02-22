@@ -159,45 +159,61 @@ aside a:hover img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    animation-timeline: scroll();
+    position: sticky;
+    top: 0;
 }
 #website-page-2 img {
-    animation: aparece-tv;
+    animation: zoom-tv;
     animation-timeline: scroll();
     width: 100%;
-    transition: transform 0.5s ease-in-out;
-    animation-timeline: view();
     z-index: -1;
+    transition: transform 0.5s ease-in-out;
+    animation-timeline: scroll();
 }
 
+/* website page 3 */
+.website-page-3 {
+    height: 3200vh;
+    width: 100%;
+}
 @keyframes desaparece-y {
     from {
         opacity: 1;
         transform: translatey(0);
     }
-    99% {
+    3% {
         opacity: 0;
         transform: translatey(100vh);
     }
-    to{
-        opacity: 0;
-        transform: translateY(100vh);
-        
 }
 @keyframes aparece-tv {
     from {
         opacity: 0;
-        transform: s;
     }
-    50% {
+    6% {
         opacity: 1;
     }
-    75%% {
-        opacity: 1;
+}
+@keyframes zoom-tv {
+    from {
         transform: scale(1);
+        opacity: 0;
     }
-    100% {
+    6% {
+        transform: scale(1);
         opacity: 1;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    45% {
         transform: scale(2);
+    }
+    to {
+        transform: scale(2.2);
     }
 }
 @keyframes desaparece-x {
@@ -205,7 +221,7 @@ aside a:hover img {
         opacity: 1;
         transform: translatex(0);
     }
-    to {
+    6% {
         opacity: 0;
         transform: translatex(-50vw);
     }
