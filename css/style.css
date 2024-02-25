@@ -173,31 +173,38 @@ aside a:hover img {
     animation-timeline: scroll();
 }
 #website-page-2 .fita {
-    width: 30%;
+    width: 45%;
     animation: fita-vhs;
     transition: transform 0.5s ease-in-out;
     animation-timeline: scroll();
     z-index: 1;
 }
+#website-page-2 .fita:hover {
+    width: 50%;
+}
 #website-page-2 .fita-projetos0 {
     position: absolute;
     left: 0;
     top: 50%;
+    z-index: 6;
 }
 #website-page-2 .fita-projetos1 {
     position: absolute;
     left: 0;
-    top: 48%;
+    top: 47%;
+    z-index: 7;
 }
 #website-page-2 .fita-projetos2 {
     position: absolute;
     left: 0;
-    top: 46%;
+    top: 44%;
+    z-index: 8;
 }
 #website-page-2 .fita-projetos3 {
     position: absolute;
     left: 0;
-    top: 44%;
+    top: 41%;
+    z-index: 9;
 }
 #website-page-2 .fita-projetos4 {
     position: absolute;
